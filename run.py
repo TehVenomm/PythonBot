@@ -19,4 +19,4 @@ async def roleonline(ctx, *a):
 		if user.status != discord.Status.offline:
 			await user.add_roles(role)
 
-bot.run(secrets.getToken())
+bot.run(secrets.getToken(), bot=False)
