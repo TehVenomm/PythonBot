@@ -16,9 +16,7 @@ async def on_ready():
 async def roleonline(ctx, *a):
 	role = discord.utils.get(ctx.guild.roles, name="A")
 	for user in ctx.guild.members:
-		if (user.has_role(role)):
-			print('nope')
-		else: 
+		if role not in user.roles:
 			await user.add_roles(role)
 
 bot.run(secrets.getToken(), bot=False)
