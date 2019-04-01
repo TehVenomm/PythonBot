@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-import myUtilities
 import secrets
 
 bot = commands.Bot(command_prefix='?')
