@@ -216,7 +216,7 @@ def isExactMatch(behemothArray, inputString):
             exactMatchBehemoth.append(line)
             return exactMatchBehemoth
     
-    return false
+    return False
 
 def fetchBehemothDB(name):
     connection = secrets.getConnection()
