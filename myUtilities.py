@@ -354,6 +354,10 @@ def behemothEmbedGenerator(behemothArray, inputString):
 	
     if (behemothMatchArray != False):
         embed = behemothMatchArray
+		print('357')
+		print(behemothMatchArray)
+		print(embed)
+		print('------------------------')
         return embed
     
     if (len(behemothArray) == 1):
