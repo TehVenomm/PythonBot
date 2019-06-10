@@ -357,7 +357,7 @@ def behemothEmbedGenerator(behemothArray, inputString):
         return embed
     
     if (len(behemothArray) == 1):
-        embed = singleBehemothEmbed(embed=behemothArray)
+        embed = singleBehemothEmbed(behemothArray)
     else:
         embed = behemothListEmbed(behemothArray, inputString)
           
