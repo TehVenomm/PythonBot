@@ -351,13 +351,13 @@ def magiEmbedGenerator(magiArray, inputString):
 
 def behemothEmbedGenerator(behemothArray, inputString):
     behemothMatchArray = isExactMatch(behemothArray, inputString)
-	
+    
     if (behemothMatchArray != False):
         embed = behemothMatchArray
-	    print('357')
-	    print(behemothMatchArray)
-	    print(embed)
-	    print('------------------------')
+        print('357')
+        print(behemothMatchArray)
+        print(embed)
+        print('------------------------')
         return embed
     
     if (len(behemothArray) == 1):
