@@ -212,8 +212,8 @@ def matchWeaponAttributes(inputWordArray):
 def isExactMatch(behemothArray, inputString):
     exactMatchBehemoth = []
     for idx, line in enumerate(behemothArray, start=0):
-		print(line)
-		print('\n\n\n')
+        print(line)
+        print('\n\n\n')
         if(line['BeheName'].lower() == inputString.lower()):
             exactMatchBehemoth[0] = line
             return exactMatchBehemoth
@@ -352,12 +352,12 @@ def magiEmbedGenerator(magiArray, inputString):
     return embed
 
 def behemothEmbedGenerator(behemothArray, inputString):
-	
+    
     behemothMatchArray = isExactMatch(behemothArray, inputString)
-	
+    
     print('behemothmatcharray\n\n\n\n')
-	print(behemothMatchArray)
-	
+    print(behemothMatchArray)
+    
     if (behemothMatchArray != False):
         embed = behemothMatchArray
         return embed
