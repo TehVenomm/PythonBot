@@ -353,15 +353,11 @@ def behemothEmbedGenerator(behemothArray, inputString):
     behemothMatchArray = isExactMatch(behemothArray, inputString)
     
     if (behemothMatchArray != False):
-        embed = behemothMatchArray
-        print('357')
-        print(behemothMatchArray)
-        print(embed)
-        print('------------------------')
+        embed = singleBehemothEmbed(behemothMatchArray)
         return embed
     
     if (len(behemothArray) == 1):
-        embed = singleBehemothEmbed(behemothArray)
+        embed = singleBehemothEmbed(embed=behemothArray)
     else:
         embed = behemothListEmbed(behemothArray, inputString)
           
