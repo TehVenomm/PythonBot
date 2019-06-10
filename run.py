@@ -31,7 +31,7 @@ async def behemoth(ctx, *a):
 
     if (len(queryResults) > 0 and len(queryResults) <= 10):
         embed = myUtilities.behemothEmbedGenerator(queryResults, filteredInput)
-        await ctx.send(embed)
+        await ctx.send(embed=embed)
     else:
         await ctx.send("Behemoth not found.")
 
